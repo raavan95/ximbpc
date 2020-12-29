@@ -14,7 +14,6 @@ export default function PdfComponent(props) {
   return (
     <div>
       <Document
-        width={600}
         file={`sops/${props.name}`}
         onLoadSuccess={onDocumentLoadSuccess}
       >

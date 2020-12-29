@@ -179,6 +179,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Diksha</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20201_Diksha Adishree Nayak - Diksha Adishree Nayak.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="diksha"/>
           {/* <Comment name="diksha"/>
@@ -192,6 +193,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Gurleen</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UH20085_Gurleen Kaur Gill - Gurleen Kaur Gill.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="gurleen"/>
           {/* <Comment name="gurleen"/>
@@ -205,6 +207,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Guru</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20331_Guru Prasad Biswal - Guru Prasad Biswal.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="guru"/>
           {/* <Comment name="guru"/>
@@ -218,6 +221,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Het</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20203_Het Manish Gala - Het Manish Gala.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="het"/>
           {/* <Comment name="het"/>
@@ -231,6 +235,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Indrashis</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UH20028_Indrashis Chowdhury - Indrashis Chowdhury.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="indrashis"/>
           {/* <Comment name="indrashis"/ */}
@@ -244,6 +249,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Jaswasi</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20205_Jaswasi Jashowanta Sahoo - Jaswasi Jashowanta Sahoo.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="jaswasi"/>
           {/* <Comment name=""jaswasi/>
@@ -257,6 +263,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Kriti</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20208_Kriti Modi - Kriti Modi.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="kirti"/>
           {/* <Comment name="kriti"/>
@@ -270,6 +277,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Manisha</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20093_Manisha Satpathy - Manisha Satpathy.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="manisha"/>
           {/* <Comment name="manisha"/>
@@ -283,6 +291,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Mimul</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UH20035_Mimul Nanda - Mimul Nanda.docx - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="mimul"/>
           {/* <Comment name="mimul"/>
@@ -296,6 +305,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Nupur</Typography>
         </AccordionSummary>
+        <PdfComponent name="Coordinator_UH20036_Nupur Ratnani - Nupur Ratnani.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="nupur"/>
           {/* <Comment name="nupur"/>
@@ -309,6 +319,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Rahul</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UH20039_Rahul Ranjan Sahoo - Rahul Ranjan Sahoo.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="rahul"/>
           {/* <Comment name="rahul"/>
@@ -322,6 +333,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Sagar</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UX20048_Sagar D Mehta - Sagar D Mehta.docx - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="sagar"/>
           {/* <Comment name="sagar"/>
@@ -335,6 +347,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Sakshi</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UH20106_Sakshi Sharma - Sakshi Sharma.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="sakshi"/>
           {/* <Comment name="sakshi"/>
@@ -348,6 +361,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Sanyukta</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20061_Sanyukta Phatke - Phatke Sanyukta Babasaheb.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="sanyukta"/>
           {/* <Comment name="sanyukta"/> */}
@@ -361,6 +375,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Shivani</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UH20047_Shivani - Shivani.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="shivani"/>
           {/* <Comment name="shivani"/>
@@ -375,6 +390,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Shubh</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20222_Shubh Gulati - Shubh Gulati.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="shubh"/>
           {/* <Comment name="shubh"/>
@@ -387,6 +403,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Siddharth</Typography>
         </AccordionSummary>
+        <PdfComponent name="Coordinator_UM20229_Siddharth Mishra - Siddharth Mishra.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="siddharth"/>
           {/* <Comment name="siddharth"/ */}
@@ -400,6 +417,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Smriti</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20238_Smriti S - Smriti S.docx - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="smriti"/>
           {/* <Comment name="smriti"/>
@@ -413,6 +431,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Sumeet</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20365_Sumeet Kumar Agrawal - SUMEET KUMAR AGRAWAL.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="sumeet"/>
           {/* <Comment name="sumeet"/>
@@ -426,6 +445,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Surbhi</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20367_Surbhi fandot - Surbhi Fandot.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="surbhi"/>
           {/* <Comment name="surbhi"/>
@@ -439,6 +459,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Susnata</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20371_Susnata Panda - Susnata Panda.docx - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="susnata"/>
           {/* <Comment name="susnata"/>
@@ -452,6 +473,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Swapneel</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UH20119_Swapneel das - Swapneel Das.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="swapneel"/>
           {/* <Comment name="swapneel"/> */}
@@ -465,6 +487,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Tapasya</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20240_Tapasya Pattnaik - Tapasya Pattnaik.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="tapasya"/>
           {/* <Comment name="tapasya"/>
@@ -478,6 +501,7 @@ export default function SimpleCard() {
         >
           <Typography className={classes.heading}>Vaibhav</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20067_Vaibhav Nagpal - Vaibhav Nagpal.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="vaibhav"/>
           {/* <Comment name="vaibhav"/>
