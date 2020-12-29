@@ -3,9 +3,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import axios from 'axios';
+import Paper from '@material-ui/core/Paper';
+import InputBase from '@material-ui/core/InputBase';
+import Divider from '@material-ui/core/Divider';
+import IconButton from '@material-ui/core/IconButton';
+import SendIcon from '@material-ui/icons/Send';
 
 const useStyles = makeStyles({
   root: {
@@ -23,40 +27,57 @@ const useStyles = makeStyles({
   pos: {
     marginBottom: 12,
   },
+  rootNewComment: {
+    padding: '2px 4px',
+    display: 'flex',
+    alignItems: 'center',
+    width: '100%',
+    minWidth: 250
+  },
+  input: {
+    marginLeft: 10,
+    flex: 1,
+  },
+  iconButton: {
+    padding: 10,
+  },
+  divider: {
+    height: 28,
+    margin: 4,
+  },
 });
 
 export default function CommentList(props) {
 
   const id = props.name;
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
-  let comments = []
   const [data, setData] = useState([]);
-  const [keys, setKeys] = useState(null);
   const [values, setValues] = useState([]);
+  const [newComment, setNewComment] = useState('');
 
-  useEffect(() => {
-        axios.get('https://ximb-b8b59-default-rtdb.firebaseio.com/.json')
-        .then(res => {
-            console.log(res.data);
-            console.log(Object.values(res.data));
-            console.log(Object.keys(res.data));
-
-            setData(res.data);
-            setValues(Object.values(res.data))
-            setKeys(Object.keys(res.data))
-        })
-        
-       
-  }, [])
-
-  if(keys){
-      for(let i = 0; i < keys.length; i++){
-          if(keys[i] == id){
-              comments = Object.values(values[i]);
-          }
-      }
+  const handleComment = () => {
+    axios.post(`https://ximb-b8b59-default-rtdb.firebaseio.com/${props.name}.json`, {comment: newComment}).then(fetchData());
+    
+    
   }
+
+  const fetchData = () => {
+    axios.get(`https://ximb-b8b59-default-rtdb.firebaseio.com/${props.name}.json`)
+      .then(res => {
+          console.log(res.data);
+          console.log(Object.values(res.data));
+
+          setData(res.data);
+          setValues(Object.values(res.data))
+      })
+  }
+
+  
+    useEffect(() => {
+      fetchData();
+     
+    }, [])
+
   
 
   return (
@@ -65,12 +86,32 @@ export default function CommentList(props) {
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           Comments
         </Typography>
-        {comments.length > 0 ? comments.map(item => {
+        {values.length > 0 ? values.map(item => {
             return(
                 <Typography>{item.comment}</Typography>
             )
         }) : null}
         
+      </CardContent>
+      <CardContent>
+       <Paper component="form" className={classes.rootNewComment}>
+        
+        <InputBase
+          className={classes.input}
+          value={newComment}
+          placeholder="Type your comment here"
+          // inputProps={{ 'aria-label': 'search google maps' }}
+          onChange={(event) => {
+            event.preventDefault();
+            setNewComment(event.target.value)
+          }}
+        />
+        
+        <Divider className={classes.divider} orientation="vertical" />
+        <IconButton color="primary" className={classes.iconButton} aria-label="send">
+          <SendIcon onClick={handleComment}/>
+        </IconButton>
+      </Paper>
       </CardContent>
     </Card>
   );

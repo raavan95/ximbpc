@@ -12,7 +12,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://ximb.edu.in/">XIMB Dashboard!</a>
+          Welcome to <a href="https://ximb.edu.in/">XIMB WALL!</a>
         </h1>
 
         <SimpleCard/>

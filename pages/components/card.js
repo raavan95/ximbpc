@@ -5,16 +5,16 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Comment from './comment';
 import CommentList from './commentList';
+import PdfComponent from './pdfComponent';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
   },
   heading: {
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular,
+    fontSize: theme.typography.pxToRem(20),
+    fontWeight: 900,
     padding: 10
   },
   commentSection: {
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function SimpleAccordion() {
+export default function SimpleCard() {
   const classes = useStyles();
  
 
@@ -37,13 +37,12 @@ export default function SimpleAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-           
             <Typography className={classes.heading}>Abhijit</Typography>
-            <iframe width="100%" height="400" frameborder="0" src='https://docs.google.com/document/d/1-Ps5vCil8k7mI7vzs6QqXvkdfCXweZbi'></iframe>
         </AccordionSummary>
+        <PdfComponent name="Member_UH20003_Abhijit Mishra - Abhijit Mishra.doc - Google Docs.pdf"/>
         <AccordionDetails className={classes.commentSection}>
           <CommentList name="abhijit"/>
-          <Comment name="abhijit"/>
+          {/* <Comment name="abhijit"/>  */}
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -52,13 +51,12 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>Aiswarya</Typography>
-          <iframe width="100%" height="400" frameborder="0" src='https://docs.google.com/document/d/1B02Du7fI8kyGWEC8ztNj-F3mvohP2e6R'></iframe>
-          
+          <Typography className={classes.heading}>Aiswarya</Typography>          
         </AccordionSummary>
+        <PdfComponent name="Coordinator_UM20080_Aiswarya Mishra - Aiswarya Mishra.doc - Google Docs.pdf"/>
         <AccordionDetails className={classes.commentSection}>
           <CommentList name="aiswarya"/>
-          <Comment name="aiswarya"/>
+          {/* <Comment name="aiswarya"/> */}
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -69,10 +67,11 @@ export default function SimpleAccordion() {
         >
           <Typography className={classes.heading}>Akash</Typography>
         </AccordionSummary>
+        <PdfComponent name="Coordinator_UH20067_Akash Anand - Akash Anand.doc - Google Docs.pdf"/>
         <AccordionDetails className={classes.commentSection}>
           <CommentList name="akash"/>
-          <Comment name="akash"/>
-        </AccordionDetails>
+          {/* <Comment name="akash"/>
+   */}      </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -82,10 +81,11 @@ export default function SimpleAccordion() {
         >
           <Typography className={classes.heading}>Aman</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20133_Aman Kumar Agarwala - Aman Kumar Agarwala.docx - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="aman"/>
-          <Comment name="aman"/>
-        </AccordionDetails>
+          {/* <Comment name="aman"/>
+    */}     </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -95,10 +95,11 @@ export default function SimpleAccordion() {
         >
           <Typography className={classes.heading}>Anjali</Typography>
         </AccordionSummary>
+        <PdfComponent name="Coordinator_UH20009_Anjali Varindani - Anjali Anil Varindani.doc - Google Docs.pdf" />
         <AccordionDetails>
         <CommentList name="anjali"/>
-          <Comment name="anjali"/>
-        </AccordionDetails>
+          {/* <Comment name="anjali"/>
+  */}       </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -108,10 +109,11 @@ export default function SimpleAccordion() {
         >
           <Typography className={classes.heading}>Anurag</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20262_Anurag Devendrasingh Rana - Anurag Devendrasingh Rana.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="anurag"/>
-          <Comment name="anurag"/>
-        </AccordionDetails>
+          {/* <Comment name="anurag"/>
+  */}       </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -121,10 +123,11 @@ export default function SimpleAccordion() {
         >
           <Typography className={classes.heading}>Arijit</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20313_Arijit Bhattacharya - Arijit Bhattacharya.doc - Google Docs.pdf"/>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="arijit"/>
-          <Comment name="arijit"/>
-        </AccordionDetails>
+          {/* <Comment name="arijit"/>
+  */}       </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -134,9 +137,10 @@ export default function SimpleAccordion() {
         >
           <Typography className={classes.heading}>Akarshan</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UH20001_Aakarshan Raj - Aakarshan Raj.doc - Google Docs.pdf"/>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="akarshan"/>
-          <Comment name="akarshan"/>
+          {/* <Comment name="akarshan"/> */}
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -147,10 +151,11 @@ export default function SimpleAccordion() {
         >
           <Typography className={classes.heading}>Asmit</Typography>
         </AccordionSummary>
+        <PdfComponent name="Coordinator_UM20322_Asmit Gautam - Gautam Asmit Arvindkumar.doc - Google Docs.pdf" />
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="asmit"/>
-          <Comment name="asmit"/>
-        </AccordionDetails>
+          {/* <Comment name="asmit"/>
+   */}      </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -160,10 +165,11 @@ export default function SimpleAccordion() {
         >
           <Typography className={classes.heading}>Bibek</Typography>
         </AccordionSummary>
+        <PdfComponent name="Member_UM20200_Bibek Pradhan - Bibek Pradhan.doc - Google Docs.pdf"/>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="bibek"/>
-          <Comment name="bibek"/>
-        </AccordionDetails>
+          {/* <Comment name="bibek"/>
+   */}      </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -175,8 +181,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="diksha"/>
-          <Comment name="diksha"/>
-        </AccordionDetails>
+          {/* <Comment name="diksha"/>
+  */}       </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -188,8 +194,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="gurleen"/>
-          <Comment name="gurleen"/>
-        </AccordionDetails>
+          {/* <Comment name="gurleen"/>
+ */}        </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -201,8 +207,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="guru"/>
-          <Comment name="guru"/>
-        </AccordionDetails>
+          {/* <Comment name="guru"/>
+    */}     </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -214,8 +220,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="het"/>
-          <Comment name="het"/>
-        </AccordionDetails>
+          {/* <Comment name="het"/>
+     */}    </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -227,7 +233,7 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="indrashis"/>
-          <Comment name="indrashis"/>
+          {/* <Comment name="indrashis"/ */}
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -240,8 +246,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="jaswasi"/>
-          <Comment name=""jaswasi/>
-        </AccordionDetails>
+          {/* <Comment name=""jaswasi/>
+ */}        </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -253,8 +259,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="kirti"/>
-          <Comment name="kriti"/>
-        </AccordionDetails>
+          {/* <Comment name="kriti"/>
+   */}      </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -266,8 +272,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="manisha"/>
-          <Comment name="manisha"/>
-        </AccordionDetails>
+          {/* <Comment name="manisha"/>
+ */}        </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -279,8 +285,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="mimul"/>
-          <Comment name="mimul"/>
-        </AccordionDetails>
+          {/* <Comment name="mimul"/>
+   */}      </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -292,8 +298,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="nupur"/>
-          <Comment name="nupur"/>
-        </AccordionDetails>
+          {/* <Comment name="nupur"/>
+   */}      </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -305,8 +311,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="rahul"/>
-          <Comment name="rahul"/>
-        </AccordionDetails>
+          {/* <Comment name="rahul"/>
+   */}      </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -318,8 +324,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="sagar"/>
-          <Comment name="sagar"/>
-        </AccordionDetails>
+          {/* <Comment name="sagar"/>
+   */}      </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -331,8 +337,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="sakshi"/>
-          <Comment name="sakshi"/>
-        </AccordionDetails>
+          {/* <Comment name="sakshi"/>
+  */}       </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -344,7 +350,7 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="sanyukta"/>
-          <Comment name="sanyukta"/>
+          {/* <Comment name="sanyukta"/> */}
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -357,8 +363,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="shivani"/>
-          <Comment name="shivani"/>
-        </AccordionDetails>
+          {/* <Comment name="shivani"/>
+ */}        </AccordionDetails>
       </Accordion>
 
       <Accordion>
@@ -371,8 +377,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="shubh"/>
-          <Comment name="shubh"/>
-        </AccordionDetails>
+          {/* <Comment name="shubh"/>
+   */}      </AccordionDetails>
       </Accordion><Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -383,7 +389,7 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="siddharth"/>
-          <Comment name="siddharth"/>
+          {/* <Comment name="siddharth"/ */}
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -396,8 +402,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="smriti"/>
-          <Comment name="smriti"/>
-        </AccordionDetails>
+          {/* <Comment name="smriti"/>
+  */}       </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -409,8 +415,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="sumeet"/>
-          <Comment name="sumeet"/>
-        </AccordionDetails>
+          {/* <Comment name="sumeet"/>
+  */}       </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -422,8 +428,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="surbhi"/>
-          <Comment name="surbhi"/>
-        </AccordionDetails>
+          {/* <Comment name="surbhi"/>
+  */}       </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -435,8 +441,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="susnata"/>
-          <Comment name="susnata"/>
-        </AccordionDetails>
+          {/* <Comment name="susnata"/>
+ */}        </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -448,7 +454,7 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="swapneel"/>
-          <Comment name="swapneel"/>
+          {/* <Comment name="swapneel"/> */}
         </AccordionDetails>
       </Accordion>
       <Accordion>
@@ -461,8 +467,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="tapasya"/>
-          <Comment name="tapasya"/>
-        </AccordionDetails>
+          {/* <Comment name="tapasya"/>
+ */}        </AccordionDetails>
       </Accordion>
       <Accordion>
         <AccordionSummary
@@ -474,8 +480,8 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails className={classes.commentSection}>
         <CommentList name="vaibhav"/>
-          <Comment name="vaibhav"/>
-        </AccordionDetails>
+          {/* <Comment name="vaibhav"/>
+ */}        </AccordionDetails>
       </Accordion>
     </div>
   );
